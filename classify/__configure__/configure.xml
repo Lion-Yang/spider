@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<configure>
+    <input_file>./__file__/baidu_video.txt</input_file>
+    <output_file>./__file__/finished.txt</output_file>
+</configure>

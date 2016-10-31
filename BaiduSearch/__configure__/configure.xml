@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configure>
+    <!-->Three type to crawl: s(homepage), v(video), n(news)<!-->
+    <crawl_type>s</crawl_type>
+    <!-->The number of the threads<!-->
+    <thread_control>5</thread_control>
+    <!-->Configure the input and output file path<!-->
+    <input_file>./__file__/baidu</input_file>
+    <output_file>./__file__/baidu_finished.txt</output_file>
+    <item>
+        <mainpage>
+            <!-->The base url of baidu search<!-->
+            <base_url>http://www.baidu.com/s?wd={}</base_url>
+            <!-->Regular expression pattern<!-->
+            <pattern>百度为您找到相关结果约(.*)个</pattern>
+        </mainpage>
+        <video>
+            <!-->The base url of baidu video<!-->
+            <base_url>http://video.baidu.com/v?word={}&amp;ie=utf-8</base_url>
+            <!-->Regular expression pattern<!-->
+            <pattern>total:.(\d+).</pattern>
+        </video>
+        <news>
+            <!-->The base url of baidu news<!-->
+            <base_url>http://news.baidu.com/ns?word={}&amp;ie=utf-8</base_url>
+            <!-->Regular expression pattern<!-->
+            <pattern>找到相关新闻约?(.*)篇</pattern>
+        </news>
+    </item>
+</configure>

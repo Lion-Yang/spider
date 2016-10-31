@@ -1,0 +1,14 @@
+[INFO  - 2016-10-26T08:17:12.450Z] GhostDriver - Main - running on port 64776
+[INFO  - 2016-10-26T08:17:13.096Z] Session [992e3800-9b54-11e6-a022-35c7b4658761] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Macintosh; Intel Mac OS X) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2016-10-26T08:17:13.096Z] Session [992e3800-9b54-11e6-a022-35c7b4658761] - page.customHeaders:  - {}
+[INFO  - 2016-10-26T08:17:13.098Z] Session [992e3800-9b54-11e6-a022-35c7b4658761] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"2.1.1","driverName":"ghostdriver","driverVersion":"1.2.0","platform":"mac-unknown-64bit","javascriptEnabled":true,"takesScreenshot":true,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"}}
+[INFO  - 2016-10-26T08:17:13.098Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: 992e3800-9b54-11e6-a022-35c7b4658761
+[ERROR - 2016-10-26T08:17:16.967Z] Session [992e3800-9b54-11e6-a022-35c7b4658761] - page.onError - msg: TypeError: null is not an object (evaluating 'document.body.clientWidth')
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2016-10-26T08:17:16.968Z] Session [992e3800-9b54-11e6-a022-35c7b4658761] - page.onError - stack:
+  fetch_visitor_hash (http://s2.music.126.net/static/mob/ntes.id.js:293)
+  neteaseTracker (http://s2.music.126.net/static/mob/ntes.id.js:337)
+  (anonymous function) (http://s2.music.126.net/static/mob/ntes.id.js:384)
+
+  phantomjs://platform/console++.js:263 in error

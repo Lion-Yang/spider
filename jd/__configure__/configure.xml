@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<configure>
+    <input_file>./__file__/jd.txt</input_file>
+    <output_file>./__file__/jd_finished.txt</output_file>
+    <xpath>//span[@class="num"]/text()</xpath>
+</configure>

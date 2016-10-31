@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<configure>
+    <pattern>
+        <name class="regex">&lt;span property="v:itemreviewed"&gt;(.*)&lt;/span&gt;</name>
+        <director class="xpath">//a[@rel="v:directedBy"]/text()</director>
+        <actor class="xpath">//a[@rel="v:starring"]/text()</actor>
+        <openarea class="regex">&lt;span class="pl"&gt;制片国家/地区:&lt;/span&gt;([^&lt;]*)&lt;br/&gt;</openarea>
+        <init_time class="xpath">//span[@property="v:initialReleaseDate"]/text()</init_time>
+        <movie_type class="xpath">//span[@property="v:genre"]/text()</movie_type>
+        <nickname class="regex">又名:&lt;/span&gt;(.*)&lt;br/&gt;</nickname>
+        <rate class="regex">&lt;strong class="ll rating_num" property="v:average"&gt;(.*)&lt;/strong&gt;</rate>
+        <rate_num class="regex">&lt;span property="v:votes"&gt;(d+)&lt;/span&gt;</rate_num>
+    </pattern>
+    <files>
+        <input_file>./__file__/douban_tv_id.txt</input_file>
+        <output_file>./__file__/douban_finished.json</output_file>
+        <temp_file>./__file__/finished_id.txt</temp_file>
+    </files>
+</configure>
